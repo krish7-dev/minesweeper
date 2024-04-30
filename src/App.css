@@ -1,43 +1,30 @@
-.abutton{
-  background-color: aqua;
-  color: black;
-}
-
-.abutton:visited{
-  color: white;
-  background-color: blue;
-}
-
 .rw{
   display: flex;
 }
 
 .cell_box{
   display: flex;
-  justify-content: center;
-  top: 30vh;
   position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .score_num{
   display: inline;
   position: relative;
-  top: 30px;
-  right: 20%;
+  color: white;
+  font-size: x-large;
 }
 
 .score{
   display: inline;
   position: relative;
-  top: 30px;
-  right: 20%;
+  color: white;
+  font-size: x-large;
 }
 
 .score_parent{
-  align-items: end;
   display: flex;
-  width: 100%;
-  flex-direction: row-reverse;
   position: relative;
-  top: 30px;
+  height: 50px;
 }

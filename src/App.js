@@ -17,10 +17,10 @@ function App() {
 
   return (
     <div>
-      <div className='score_parent'><h1 className='score_num'>{score}</h1><h1 className='score'>Score :</h1></div>
       
       <div className='cell_box'>
-        <div>
+      <div className='score_parent'><h1 className='score'>Score :</h1><h1 className='score_num'>{score}</h1></div>
+        <div className='rw_parent'>
           {l.map((e)=>{return <div className='rw'>{e.map((f)=>{return <div><Cell value={f}/></div>})}</div>})}
         </div>
       </div>

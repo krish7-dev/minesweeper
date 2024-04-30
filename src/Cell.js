@@ -5,12 +5,12 @@ import store from './store';
 function Cell({value}){
 
     const [val,setval] = useState("")
-    const [clr,setclr] = useState("black")
+    const [clr,setclr] = useState(1)
 
     const handleclick = () =>{
         if(value==="💣"){
             setval(value)
-            setclr("white")
+            setclr(1)
             store.dispatch({
                 type:'blast',
                 payload:'😟'
@@ -29,7 +29,7 @@ function Cell({value}){
 
     return(
         <div>
-            <button onClick={()=>handleclick()}><div id="cell" style={{backgroundColor:clr}}>{val}</div></button>
+            <button onClick={()=>handleclick()} className='cell_button'><div id="cell" style={{opacity:clr}}>{val}</div></button>
         </div>
     )
 }
