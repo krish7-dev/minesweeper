@@ -4,9 +4,9 @@ import store from './store';
 import Cell from './Cell';
 function App() {
 
-  const l=[[3,5,2,"💣",1,8,"💣"],[3,5,2,"💣",1,8,"💣"]]
+  const l=[[3,5,2,"💣",1,8,"💣"],[1,"💣",4,2,7,"💣",8],[3,5,2,"💣",1,8,"💣"],[3,5,2,"💣",1,8,"💣"],[1,"💣",4,2,7,"💣",8],[3,5,2,"💣",1,8,"💣"]]
   const [score,setscr]=useState(0);
-
+  
   store.subscribe(ren)
   function ren(){
     const state = store.getState()
@@ -17,14 +17,15 @@ function App() {
 
   return (
     <div>
-      
+      <div className='title'>Minecraft</div>
       <div className='cell_box'>
-      <div className='score_parent'><h1 className='score'>Score :</h1><h1 className='score_num'>{score}</h1></div>
+      <div className='score_parent'><h1 className='score'>Score : <span>{score}</span></h1><button className='reset'>⟳</button></div>
         <div className='rw_parent'>
           {l.map((e)=>{return <div className='rw'>{e.map((f)=>{return <div><Cell value={f}/></div>})}</div>})}
         </div>
+        
       </div>
-
+      
     </div>
   );
 }

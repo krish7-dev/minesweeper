@@ -9,22 +9,35 @@
   align-items: center;
 }
 
-.score_num{
-  display: inline;
-  position: relative;
-  color: white;
-  font-size: x-large;
-}
+
 
 .score{
   display: inline;
   position: relative;
   color: white;
   font-size: x-large;
+  font-family:monospace;
 }
 
 .score_parent{
   display: flex;
   position: relative;
   height: 50px;
+}
+
+.title{
+  color: white;
+  font-size: 4rem;
+  font-family: monospace;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.reset{
+  height: 30px;
+  align-self: center;
+  font-size: larger;
+  color: white;
+  background-color: black;
+  border: 0;
 }
