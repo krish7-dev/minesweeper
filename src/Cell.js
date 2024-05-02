@@ -6,25 +6,25 @@ function Cell({value}){
 
     const [val,setval] = useState("")
     const [clr,setclr] = useState("")
-
     const handleclick = () =>{
         if(value==="💣"){
             setval(value)
             setclr("")
             store.dispatch({
                 type:'blast',
-                payload:'😟'
+                payload:-1
             })
         }
         else{
             setval(value)
             setclr("")
+            store.dispatch({
+                type:'INCREMENT',
+                payload:value
+            })
         }
 
-        store.dispatch({
-            type:'INCREMENT',
-            payload:value
-        })
+        
     }
 
     return(

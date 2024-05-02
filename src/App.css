@@ -15,14 +15,17 @@
   display: inline;
   position: relative;
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
   font-family:monospace;
+  margin-right: 20px;
+  align-self: center;
 }
 
 .score_parent{
   display: flex;
   position: relative;
-  height: 50px;
+  height: 60px;
+  width: fit-content;
 }
 
 .title{
@@ -40,4 +43,13 @@
   color: white;
   background-color: black;
   border: 0;
+  margin-left: 20px;
+}
+
+.reset:hover{
+  opacity: 0.5;
+}
+
+.emoji{
+  align-self: center;
 }
