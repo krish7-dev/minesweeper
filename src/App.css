@@ -43,7 +43,7 @@
   color: white;
   background-color: black;
   border: 0;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .reset:hover{
@@ -52,4 +52,5 @@
 
 .emoji{
   align-self: center;
+  font-size: 25px;
 }

@@ -3,7 +3,6 @@ import './cells.css';
 import store from './store';
 
 function Cell({value}){
-
     const [val,setval] = useState("")
     const [clr,setclr] = useState("")
     const handleclick = () =>{
@@ -22,6 +21,7 @@ function Cell({value}){
                 type:'INCREMENT',
                 payload:value
             })
+
         }
 
         
