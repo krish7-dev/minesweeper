@@ -18,7 +18,6 @@ for (let c=0;c<7;c++){
     rw--
   }
 }
-console.log(l)
 store.subscribe(()=>fc())
 
 function App() {
@@ -29,7 +28,6 @@ function App() {
   const [flag,setflag] = useState(1)
  
   fc = () =>{
-    console.log("Boom")
     const state = store.getState()
     const newv = state
     if(newv<0){

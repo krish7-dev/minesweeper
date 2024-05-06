@@ -3,7 +3,6 @@ const reducer = (state=0,action)=>{
         return state + action.payload;
     }
     if(action.type === 'blast'){
-        console.log("blast")
         return (state+1)*action.payload
     }
     return state
